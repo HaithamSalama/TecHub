@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tc2"
+    android:scaleType="centerCrop"
+    android:keepScreenOn="true"
+    tools:context="com.example.dell.techub.MainActivity">
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv1"
+        android:src="@drawable/spot" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_alignStart="@+id/tv2"
+        android:layout_below="@+id/imb1"
+        android:fontFamily="casual"
+        android:text="@string/ect"
+        android:textColor="#ff8800"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv3"
+        android:layout_alignStart="@+id/tv3"
+        android:layout_below="@+id/tv1"
+        android:fontFamily="casual"
+        android:text="@string/sl"
+        android:textColor="#ff8800"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imb1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cctv"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/imb2"
+        android:paddingTop="2dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imb2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:onClick="facepage"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/f"
+        android:paddingTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv5"
+        android:layout_alignLeft="@+id/tv5"
+        android:layout_alignStart="@+id/tv5"
+        android:layout_marginBottom="11dp"
+        android:text="@string/name"
+        android:textColor="#ff8800"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv5"
+        android:layout_marginBottom="51dp"
+        android:text="@string/num"
+        android:textColor="#ff8800"
+        android:textSize="15sp"
+        android:autoLink="phone"
+        />
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/mail"
+        android:textColor="#ff8800"
+        android:textSize="15sp"
+        android:autoLink="email"
+        />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv2"
+        android:autoLink="web"
+        android:text="@string/web"
+        android:textColor="#ff8800"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"/>
+
+</RelativeLayout>
